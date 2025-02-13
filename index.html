@@ -10,9 +10,6 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
     <style type="text/css">
-        body {
-            height: 2000px;
-        }
 
         #img-fluid {
             max-height: 250px;
@@ -96,7 +93,7 @@
 
 
     <!-- ABOUT US -->
-        <section id="About" class="text-center p-5 bg-light">
+    <section id="About" class="text-center p-5 bg-light">
                     <div class="container">
                         <h1 class="text-dark fw-bold display-4 mb-4">Tentang Kami</h1>
                         <div class="row justify-content-center">
@@ -146,10 +143,327 @@
                     </div>
     </section>
     <!-- ABOUT US END -->
+    \
 
 
+    <!-- Catalog -->
+    <section id="Catalog" class="catalog">
+        <div class="container my-5 text-center">
+            <h1 class="fw-bold">🛵 Katalog Motor</h1>
+            <div class="row justify-content-center my-4">
+                <div class="col-lg-10">
+                    <div class="row g-3 justify-content-center">
+                        <!-- Honda Beat -->
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="card shadow-sm">
+                                <img src="honda-beat.jpg" class="card-img-top img-fluid" alt="Honda Beat 2024">
+                                <div class="card-body">
+                                    <h5 class="card-title">Honda Beat 2024 <span class="badge bg-primary">Baru</span>
+                                    </h5>
+                                    <p class="card-text">110cc, eSP, PGM-FI</p>
+                                    <p class="fw-bold text-primary">Rp 18.500.000</p>
+                                    <button class="btn btn-detail w-100" data-bs-toggle="modal"
+                                        data-bs-target="#hondaBeatModal">Lihat Detail</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Yamaha NMAX -->
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="card shadow-sm">
+                                <img src="yamaha-nmax.jpg" class="card-img-top img-fluid" alt="Yamaha NMAX 2024">
+                                <div class="card-body">
+                                    <h5 class="card-title">Yamaha NMAX 2024 <span class="badge bg-success">Promo</span>
+                                    </h5>
+                                    <p class="card-text">155cc, VVA, ABS</p>
+                                    <p class="fw-bold text-success">Rp 32.000.000</p>
+                                    <button class="btn btn-detail w-100" data-bs-toggle="modal"
+                                        data-bs-target="#yamahaNmaxModal">Lihat Detail</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Honda Vario -->
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="card shadow-sm">
+                                <img src="honda-vario.jpg" class="card-img-top img-fluid" alt="Honda Vario 160">
+                                <div class="card-body">
+                                    <h5 class="card-title">Honda Vario 160 <span class="badge bg-primary">Baru</span>
+                                    </h5>
+                                    <p class="card-text">160cc, eSP+, PGM-FI</p>
+                                    <p class="fw-bold text-primary">Rp 26.000.000</p>
+                                    <button class="btn btn-detail w-100" data-bs-toggle="modal"
+                                        data-bs-target="#hondaVarioModal">Lihat Detail</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Yamaha Aerox -->
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="card shadow-sm">
+                                <img src="yamaha-aerox.jpg" class="card-img-top img-fluid" alt="Yamaha Aerox 155">
+                                <div class="card-body">
+                                    <h5 class="card-title">Yamaha Aerox 155 <span class="badge bg-success">Promo</span>
+                                    </h5>
+                                    <p class="card-text">155cc, VVA, ABS</p>
+                                    <p class="fw-bold text-success">Rp 28.000.000</p>
+                                    <button class="btn btn-detail w-100" data-bs-toggle="modal"
+                                        data-bs-target="#yamahaAeroxModal">Lihat Detail</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Honda PCX -->
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="card shadow-sm">
+                                <img src="honda-pcx.jpg" class="card-img-top img-fluid" alt="Honda PCX 160">
+                                <div class="card-body">
+                                    <h5 class="card-title">Honda PCX 160 <span class="badge bg-primary">Baru</span></h5>
+                                    <p class="card-text">160cc, eSP+, ABS</p>
+                                    <p class="fw-bold text-primary">Rp 32.500.000</p>
+                                    <button class="btn btn-detail w-100" data-bs-toggle="modal"
+                                        data-bs-target="#hondaPcxModal">Lihat Detail</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Yamaha XMAX -->
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="card shadow-sm">
+                                <img src="yamaha-xmax.jpg" class="card-img-top img-fluid" alt="Yamaha XMAX 250">
+                                <div class="card-body">
+                                    <h5 class="card-title">Yamaha XMAX 250 <span class="badge bg-success">Promo</span>
+                                    </h5>
+                                    <p class="card-text">250cc, Blue Core, ABS</p>
+                                    <p class="fw-bold text-success">Rp 65.000.000</p>
+                                    <button class="btn btn-detail w-100" data-bs-toggle="modal"
+                                        data-bs-target="#yamahaXmaxModal">Lihat Detail</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Detail Motor  Honda Beat -->
+    <div class="modal fade" id="hondaBeatModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Honda Beat 2024</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>110cc, eSP, PGM-FI</li>
+                        <li>Starter: Electric & Kick</li>
+                        <li>Transmisi: CVT</li>
+                        <li>Rem: Cakram (Depan), Tromol (Belakang)</li>
+                        <li>Kapasitas Tangki: 4.2L</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Yamaha NMAX -->
+    <div class="modal fade" id="yamahaNmaxModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Yamaha NMAX 2024</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>155cc, VVA, ABS</li>
+                        <li>Suspensi: Teleskopik (Depan), Unit Swing (Belakang)</li>
+                        <li>Transmisi: CVT</li>
+                        <li>Rem: Cakram (Depan & Belakang)</li>
+                        <li>Kapasitas Tangki: 7.1L</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Honda vario 160 -->
+    <div class="modal fade" id="hondaVarioModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Honda Vario 160</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>160cc, eSP+, PGM-FI</li>
+                        <li>Starter: Electric & Kick</li>
+                        <li>Transmisi: CVT</li>
+                        <li>Rem: Cakram (Depan), Tromol (Belakang)</li>
+                        <li>Kapasitas Tangki: 4.2L</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- yamaha aerox 155 -->
+    <div class="modal fade" id="yamahaAeroxModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Yamaha Aerox 155</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>155cc, VVA, ABS</li>
+                        <li>Suspensi: Teleskopik (Depan), Unit Swing (Belakang)</li>
+                        <li>Transmisi: CVT</li>
+                        <li>Rem: Cakram (Depan & Belakang)</li>
+                        <li>Kapasitas Tangki: 7.1L</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
+    <!-- Honda PCX -->
+    <div class="modal fade" id="hondaPcxModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Honda PCX 160</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>160cc, eSP+, PGM-FI</li>
+                        <li>Starter: Electric & Kick</li>
+                        <li>Transmisi: CVT</li>
+                        <li>Rem: Cakram (Depan), Tromol (Belakang)</li>
+                        <li>Kapasitas Tangki: 4.2L</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Yamaha XMAX -->
+    <div class="modal fade" id="yamahaXmaxModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Yamaha XMAX 250</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>250cc, Blue Core, ABS</li>
+                        <li>Suspensi: Teleskopik (Depan), Unit Swing (Belakang)</li>
+                        <li>Transmisi: CVT</li>
+                        <li>Rem: Cakram (Depan & Belakang)</li>
+                        <li>Kapasitas Tangki: 7.1L</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Catalog end -->
+
+    <!-- layanan/service -->
+    <section id="Service" class="service">
+        <div class="container my-5 text-center">
+            <h2 class="fw-bold">Layanan Kami</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="service-box p-4 shadow-sm rounded">
+                        <h4>Kredit Motor</h4>
+                        <p>Proses mudah dan cepat dengan berbagai pilihan tenor yang fleksibel.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-box p-4 shadow-sm rounded">
+                        <h4>Service & Spare Part</h4>
+                        <p>Perawatan berkala dan suku cadang asli untuk menjaga performa motor Anda.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-box p-4 shadow-sm rounded">
+                        <h4>Tukar Tambah</h4>
+                        <p>Ingin motor baru? Tukarkan motor lama Anda dengan harga terbaik.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimoni Pelanggan -->
+    <section id="Testimonial"" class=" testimonials">
+        <div class="container my-5 text-center">
+            <h2 class="fw-bold">Apa Kata Pelanggan Kami?</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-4 testimonial-card">
+                    <p class="testimonial-text">"Pelayanan luar biasa, motor sampai tepat waktu!"</p>
+                    <h5 class="testimonial-name">- Budi</h5>
+                </div>
+                <div class="col-md-4 testimonial-card">
+                    <p class="testimonial-text">"Harga terjangkau dengan kualitas terbaik. Sangat direkomendasikan!"</p>
+                    <h5 class="testimonial-name">- Siti</h5>
+                </div>
+                <div class="col-md-4 testimonial-card">
+                    <p class="testimonial-text">"Respon cepat dan ramah, sangat puas dengan pelayanannya."</p>
+                    <h5 class="testimonial-name">- Andi</h5>
+                </div>
+                <div class="col-md-4 testimonial-card">
+                    <p class="testimonial-text">"Pemesanan mudah dan pengiriman sangat aman. Terbaik!"</p>
+                    <h5 class="testimonial-name">- Rina</h5>
+                </div>
+                <div class="col-md-4 testimonial-card">
+                    <p class="testimonial-text">"Produk berkualitas tinggi dengan harga yang bersaing."</p>
+                    <h5 class="testimonial-name">- Fajar</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimoni Pelanggan end  -->
+
+    <!-- Hubungi Kami -->
+    <section id="Contact" class="contact">
+        <div class="container my-5 text-center">
+            <h2 class="fw-bold">Hubungi Kami</h2>
+            <p class="contact-description">Kami siap membantu Anda! Silakan isi formulir di bawah ini atau hubungi kami
+                melalui WhatsApp dan Instagram.</p>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form class="contact-form">
+                        <input type="text" class="form-control mb-3" placeholder="Nama Anda" required>
+                        <input type="email" class="form-control mb-3" placeholder="Email Anda" required>
+                        <textarea class="form-control mb-3" placeholder="Pesan Anda" rows="5" required></textarea>
+                        <button type="submit" class="btn btn-primary w-100">Kirim</button>
+                    </form>
+                    <div class="contact-info mt-4">
+                        <p><strong>WhatsApp:</strong> <a href="https://wa.me/08123456789"
+                                target="_blank">08123456789</a></p>
+                        <p><strong>Instagram:</strong> <a href="https://instagram.com/dealer_mtr"
+                                target="_blank">@dealer_mtr</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="map-container mt-4">
+                <iframe src="https://maps.google.com/maps?q=dealer%20motor&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                    width="100%" height="300" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- hubungi kami end -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
