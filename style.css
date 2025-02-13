@@ -1,0 +1,154 @@
+        /* General */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        /* Navbar */
+        .navbar {
+            transition: all 0.3s ease-in-out;
+        }
+
+        .navbar-nav .nav-link {
+            font-size: 1rem;
+            font-weight: 600;
+            padding: 10px 15px;
+            transition: all 0.3s ease;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #007bff !important;
+        }
+
+        .btn-whatsapp {
+            background-color: #25d366;
+            color: white;
+            font-weight: bold;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #1da851;
+            transform: scale(1.05);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('./ASSETS/IMG/motor-bg.jpg') center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+        }
+
+/* Tombol Cari Motor */
+.btn-search {
+    font-size: 1.3rem;
+    padding: 14px 36px;
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Efek Hover Gelombang */
+.btn-search::before {
+    content: "";
+    position: absolute;
+    width: 400%;
+    height: 400%;
+    top: 50%;
+    left: 50%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 10%, transparent 60%);
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.6s ease-out;
+    border-radius: 50%;
+}
+
+.btn-search:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* Efek Glow saat Hover */
+.btn-search:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.6), 0 0 15px rgba(0, 255, 255, 0.6);
+}
+
+/* Efek animasi garis bawah */
+.btn-search::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #00ffff, #007bff);
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.4s ease-in-out;
+}
+
+.btn-search:hover::after {
+    transform: scaleX(1);
+}
+
+/* Efek ikon saat hover */
+.btn-search i {
+    transition: transform 0.3s ease-in-out;
+}
+
+.btn-search:hover i {
+    transform: rotate(360deg);
+}
+
+
+        /* About Section */
+        #About {
+            padding: 80px 0;
+        }
+
+        .about-heading {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #333;
+        }
+
+        .list-group-item {
+            background: none;
+            border: none;
+            font-size: 1.1rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .hero img {
+                max-width: 80%;
+            }
+        }
