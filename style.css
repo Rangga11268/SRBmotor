@@ -4,9 +4,16 @@
             background-color: #f8f9fa;
         }
 
-        /* Navbar */
+/* Navbar */
         .navbar {
             transition: all 0.3s ease-in-out;
+            background: rgba(255, 255, 255, 0.6); /* Transparan */
+            backdrop-filter: blur(10px); /* Efek Glassmorphism */
+        }
+
+        .navbar.scrolled {
+            background: rgba(255, 255, 255, 0.85);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
         .navbar-nav .nav-link {
@@ -18,6 +25,7 @@
 
         .navbar-nav .nav-link:hover {
             color: #007bff !important;
+            transform: translateY(-2px);
         }
 
         .btn-whatsapp {
@@ -25,30 +33,55 @@
             color: white;
             font-weight: bold;
             transition: all 0.3s ease-in-out;
+            padding: 8px 15px;
+            border-radius: 30px;
         }
 
         .btn-whatsapp:hover {
             background-color: #1da851;
-            transform: scale(1.05);
+            transform: scale(1.1);
         }
-
         /* Hero Section */
-        .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('./ASSETS/IMG/motor-bg.jpg') center/cover no-repeat;
-            color: white;
-            text-align: center;
-            padding: 100px 0;
-        }
+.hero {
+    background: linear-gradient(to bottom, #007bff, #007bff);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+    padding: 150px 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
-        .hero h1 {
-            font-size: 3rem;
-            font-weight: 700;
-        }
+.hero h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
 
-        .hero p {
-            font-size: 1.3rem;
-            margin-bottom: 20px;
-        }
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.hero .btn {
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.hero .btn:hover {
+    background-color: #ff6600;
+}
 
 /* Tombol Cari Motor */
 .btn-search {
@@ -119,6 +152,58 @@
 .btn-search:hover i {
     transform: rotate(360deg);
 }
+
+        /* About Us Responsive */
+        #About {
+            background-color: #f7f7f7;
+            padding: 40px 15px;
+        }
+
+        #About h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        #About h3 {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        #About p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        #About ul {
+            padding-left: 0;
+        }
+
+        #About li {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            list-style: none;
+        }
+
+        #About li:last-child {
+            border-bottom: none;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            #About {
+                padding: 30px 10px;
+            }
+
+            #About h1 {
+                font-size: 2rem;
+            }
+
+            #About h3 {
+                font-size: 1.5rem;
+            }
+        }
 
 /* catalog */
 .catalog {
@@ -287,9 +372,18 @@
     
         /* Responsive */
         @media (max-width: 768px) {
+            
             .hero h1 {
                 font-size: 2.5rem;
             }
+         /* Add polyfill for Safari on iOS */
+        @media screen and (max-width: 768px) {
+        .backdrop-filter {
+        /* Use polyfill for Safari on iOS */
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+            }
+        }
 
             .hero p {
                 font-size: 1.1rem;
