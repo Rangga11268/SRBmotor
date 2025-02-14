@@ -376,14 +376,6 @@
             .hero h1 {
                 font-size: 2.5rem;
             }
-         /* Add polyfill for Safari on iOS */
-        @media screen and (max-width: 768px) {
-        .backdrop-filter {
-        /* Use polyfill for Safari on iOS */
-            -webkit-backdrop-filter: blur(10px);
-            backdrop-filter: blur(10px);
-            }
-        }
 
             .hero p {
                 font-size: 1.1rem;
